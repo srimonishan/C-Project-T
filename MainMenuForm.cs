@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LocalArtisanCraftMarket.Database;
 
 namespace LocalArtisanCraftMarket
 {
@@ -19,7 +20,14 @@ namespace LocalArtisanCraftMarket
 
         private void MainMenuForm_Load(object sender, EventArgs e)
         {
-
+            if (ConnectionTest.TestConnection())
+            {
+                MessageBox.Show("Database Connected Successfully!");
+            }
+            else
+            {
+                MessageBox.Show("Database Connection Failed!");
+            }
         }
     }
 }
