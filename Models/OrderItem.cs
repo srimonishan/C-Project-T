@@ -15,7 +15,7 @@ namespace LocalArtisanCraftMarket.Models
         public decimal UnitPrice { get; set; }
         public decimal SubTotal { get; set; }
 
-        
+        // Extra fields (not in DB, just for display in the form)
         public string ItemName { get; set; }
     }
 }

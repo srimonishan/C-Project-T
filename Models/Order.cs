@@ -12,7 +12,7 @@ namespace LocalArtisanCraftMarket.Models
         public int CustomerID { get; set; }
         public DateTime OrderDate { get; set; }
         public decimal TotalAmount { get; set; }
-        public string OrderStatus { get; set; }   
+        public string OrderStatus { get; set; }   // "Placed","Packed","Shipped","Delivered","Cancelled"
         public string DeliveryAddress { get; set; }
         public string ContactNumber { get; set; }
     }
