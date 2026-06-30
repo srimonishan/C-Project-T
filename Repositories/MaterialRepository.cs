@@ -12,8 +12,7 @@ namespace LocalArtisanCraftMarket.Repositories
 {
     internal class MaterialRepository
     {
-        
-      
+
         /// Returns all materials ordered by name.
         public List<Material> GetAll()
         {
@@ -287,7 +286,7 @@ namespace LocalArtisanCraftMarket.Repositories
             }
         }
 
-       
+
         // HELPERS FOR FORMS
 
         /// Returns a DataTable of all craft items (ID + Name).
@@ -367,5 +366,6 @@ namespace LocalArtisanCraftMarket.Repositories
                     ? (object)DBNull.Value
                     : m.Supplier.Trim());
         }
+
     }
 }
