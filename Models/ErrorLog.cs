@@ -8,5 +8,9 @@ namespace LocalArtisanCraftMarket.Models
 {
     internal class ErrorLog
     {
+        public int ErrorId { get; set; }
+        public string ErrorMessage { get; set; }
+        public string StackTrace { get; set; }
+        public DateTime ErrorDate { get; set; }    
     }
 }
