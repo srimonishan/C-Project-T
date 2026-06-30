@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
+using System;
 
 namespace LocalArtisanCraftMarket.Database
 {
@@ -15,8 +16,9 @@ namespace LocalArtisanCraftMarket.Database
                     return true;
                 }
             }
-            catch
+            catch (Exception ex)
             {
+                System.Diagnostics.Debug.WriteLine("Database Connection Error: " + ex.Message);
                 return false;
             }
         }
