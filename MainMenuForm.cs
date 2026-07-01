@@ -55,9 +55,11 @@ namespace LocalArtisanCraftMarket
 
             SetActiveButton(clicked);
             lblPageTitle.Text = clicked.Text.Trim();
-
-            // TODO: Replace content panel with the relevant UserControl/Form for each section.
-            // e.g. LoadView(new CraftItemsControl());
+            if(clicked==btnArtisans)
+            {
+                var f=new LocalArtisanCraftMarket.Forms.ArtisanSignupForm();
+                f.ShowDialog(this);
+            }
         }
 
         private void SetActiveButton(Button button)
